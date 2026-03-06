@@ -1,0 +1,118 @@
+body {
+    margin: 25px;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    display: flex;
+}
+
+.calculator {
+    background: #baffc2;
+    padding: 11px;
+    border-radius: 15px;
+    width: 546px;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 33px;
+}
+
+input {
+    width: 200px;
+    height: 35px;
+    flex: 0 0 200px;
+    font-size: 20px;
+    border: 2px dashed #ff0000;
+    border-radius: 10px;
+    background: transparent;
+    color: #ff0000;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+select {
+    width: 80px;
+    height: 35px;
+    flex: 0 0 80px;
+    font-size: 20px;
+    border: 2px dashed #ff0000;
+    border-radius: 10px;
+    background: transparent;
+    color: #ff0000;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+input.error {
+    background: #ffd6d6;
+}
+
+button {
+    width: 161px;
+    height: 35px;
+    font-size: 20px;
+
+    border: 2px dashed #ff0000;
+    border-radius: 10px;
+    color: #ff0000;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 27px auto;
+    box-sizing: border-box;
+}
+
+.results {
+    margin-top: 0;
+    border: 2px dashed #ff0000;
+    border-radius: 10px;
+    padding: 15px;
+    color: #ff0000;
+    font-size: 20px;
+    min-height: 81px;
+    width: 523px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.old {
+    color: #d98a68;
+}
+
+.error-message {
+    color: darkred;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    min-height: 20px;
+}
+
+@media (max-width: 550px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 33px;
+    }
+    
+    input {
+        width: 200px;
+        height: 35px;
+        flex: 0 0 35px;
+    }
+    
+    select {
+        width: 70px;
+        height: 35px;
+        flex: 0 0 35px
+    }
+    
+    .results {
+        width: 100%;
+    }
+}
